@@ -43,7 +43,7 @@ else
   val=(${val[@]:1:3} 1)
 fi
 
-echo -ne "⏳"
+echo -ne "cpu"
 #echo -ne ${graph[${val[0]}${val[1]}]}${graph[${val[2]}${val[3]}]}
 printf " %.2f%% |" $((usage / 100)).$((usage % 100))
 

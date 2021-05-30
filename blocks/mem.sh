@@ -38,7 +38,7 @@ END {
     }
 
     # full text
-    printf("🧠 %.1fG/%.1fG |", used, total)
+    printf("mem %.1fG/%.1fG |", used, total)
     
     # short text
     #printf("%.f%%\n", pct)
