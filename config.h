@@ -17,7 +17,7 @@
 
 /* delimiter specified as an array of characters
  * don't remove DELIMITERENDCHAR at the end */
-static const char delimiter[] = { ' ', ' ', ' ', DELIMITERENDCHAR };
+static const char delimiter[] = { ' ', DELIMITERENDCHAR };
 
 #include "block.h"
 
@@ -43,6 +43,9 @@ static const char delimiter[] = { ' ', ' ', ' ', DELIMITERENDCHAR };
 
 static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
+        { PATH("cpu.sh"),               NULL,                           10,             1},
+        { PATH("mem.sh"),               NULL,                           10,             1},
+        { PATH("hdd.sh"),               NULL,                           60,             1},
         { PATH("calendar.sh"),          NULL,                           1,              1},
         { NULL } /* just to mark the end of the array */
 };
